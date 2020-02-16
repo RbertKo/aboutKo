@@ -1,3 +1,13 @@
-div {
-  color: red;
+@import "../../GlobalStyle";
+
+.header--wrapper {
+  background-color: $main-color;
+
+  min-height: 45px;
+
+  .header--inner {
+    display: flex;
+    justify-content: space-between;
+
+  }
 }

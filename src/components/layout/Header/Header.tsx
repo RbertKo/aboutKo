@@ -5,7 +5,12 @@ const Header = () => {
     return (
         <div className={'header--wrapper'}>
             <header className={'header--inner'}>
-                Header
+                <div>
+                    a
+                </div>
+                <div>
+                    b
+                </div>
             </header>
         </div>
     )
