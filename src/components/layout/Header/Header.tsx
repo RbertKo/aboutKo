@@ -7,7 +7,9 @@ const Header = () => {
         <div className={'header__wrapper'}>
             <header className={'header__inner'}>
                 <div className={'header__left'}>
-                    a
+                    <span className={'header__left__menu--button'}>
+                        <i className={'fas fa-bars'} />
+                    </span>
                 </div>
                 <div>
                     b
