@@ -1,9 +1,10 @@
 import React from 'react';
+import './style.scss';
 
 const Header = () => {
     return (
-        <div>
-            <header>
+        <div className={'header--wrapper'}>
+            <header className={'header--inner'}>
                 Header
             </header>
         </div>
