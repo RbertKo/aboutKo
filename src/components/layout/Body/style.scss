@@ -1,0 +1,15 @@
+.body__wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: calc(100vh - 45px);
+
+  background-color: red;
+
+  .body__inner {
+    width: 80vw;
+
+
+  }
+}

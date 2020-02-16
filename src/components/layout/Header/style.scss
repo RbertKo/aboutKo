@@ -1,11 +1,11 @@
 @import "../../GlobalStyle";
 
-.header--wrapper {
+.header__wrapper {
   background-color: $main-color;
 
   min-height: 45px;
 
-  .header--inner {
+  .header__inner {
     display: flex;
     justify-content: space-between;
 
