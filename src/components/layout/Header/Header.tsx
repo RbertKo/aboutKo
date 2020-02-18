@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {FC, useContext} from 'react';
 
 import './style.scss';
 
-const Header = () => {
+interface IHeader {
+    handleClick(): void
+}
+
+const Header:FC<IHeader> = ({handleClick}) => {
     return (
         <div className={'header__wrapper'}>
             <header className={'header__inner'}>
                 <div className={'header__left'}>
-                    <span className={'header__left__menu--button'}>
+                    <span className={'header__left__menu--button'} onClick={handleClick}>
                         <i className={'fas fa-bars'} />
                     </span>
                 </div>

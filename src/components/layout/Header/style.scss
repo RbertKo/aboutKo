@@ -22,6 +22,8 @@ $header-height: 50px;
         font-size: calc(#{$header-height} / 2);
 
         padding-left: 10px;
+
+        cursor: pointer;
       }
     }
   }
