@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,11 +10,19 @@ import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css'
 import Header from './components/layout/Header';
 import Body from './components/layout/Body';
 import Footer from "./components/layout/Footer";
+import {headerContext} from "./contexts";
+
+const handleClick = () => {
+    console.log('test')
+}
 
 const App = () => {
+    const test = useContext(headerContext);
+    console.log({test})
   return (
     <div className="App">
-      <Header />
+
+      <Header handleClick={handleClick}/>
       <Body />
       <Footer />
     </div>
