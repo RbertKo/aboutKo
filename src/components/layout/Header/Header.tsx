@@ -1,17 +1,20 @@
-import React, { FC } from 'react';
+import React, {FC, useContext} from 'react';
+import HeaderContext, {IHeaderContext, sideActionType, sideState} from "../../../reducers/side";
 
 import './style.scss';
 
-interface IHeader {
-    handleClick(): void
-}
+const Header:FC = () => {
+    const [state, dispatch]: IHeaderContext = useContext(HeaderContext)
 
-const Header:FC<IHeader> = ({handleClick}) => {
+    console.log({state})
+
     return (
         <div className={'header__wrapper'}>
             <header className={'header__inner'}>
                 <div className={'header__left'}>
-                    <span className={'header__left__menu--button'} onClick={handleClick}>
+                    <span className={'header__left__menu--button'} onClick={() => dispatch ? dispatch({
+                        type: sideActionType.toggleSideNav
+                    }) : null}>
                         <i className={'fas fa-bars'} />
                     </span>
                 </div>
