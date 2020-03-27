@@ -11,11 +11,7 @@ import Header from './components/layout/Header';
 import Body from './components/layout/Body';
 import Footer from "./components/layout/Footer";
 
-import HeaderContext, { sideReduce } from './reducers/side'
-
-const handleClick = () => {
-    console.log('test')
-}
+import HeaderContext, { sideReduce } from './contexts/side'
 
 const App = () => {
     const sideReducer = useReducer(sideReduce, {isSpreaded: false})

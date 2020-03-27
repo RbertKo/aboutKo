@@ -20,6 +20,7 @@ export type IHeaderContext = [
 export function sideReduce(state: sideState, action: sideAction): sideState {
     switch(action.type) {
         case sideActionType.toggleSideNav: {
+            console.log({state})
             return {
                 isSpreaded: !state.isSpreaded
             };
