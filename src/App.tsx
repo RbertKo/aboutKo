@@ -10,6 +10,7 @@ import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css'
 import Header from './components/layout/Header';
 import Body from './components/layout/Body';
 import Footer from "./components/layout/Footer";
+import SideNav from "./components/layout/SideNav";
 
 import HeaderContext, { sideReduce } from './contexts/side'
 
@@ -20,7 +21,7 @@ const App = () => {
         <HeaderContext.Provider value={sideReducer}>
             <div className="App">
                 <Header/>
-                <Body/>
+                <Body SideNav={SideNav} />
                 <Footer/>
             </div>
         </HeaderContext.Provider>

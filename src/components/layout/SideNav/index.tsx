@@ -1,1 +1,3 @@
-export * from './SideNav';
+import SideNav from './SideNav';
+
+export default SideNav;
